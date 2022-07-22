@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Manrope', sans-serif;
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'Work Sans', sans-serif;
+    src: url(../fonts/WorkSans-Regular.ttf) format("truetype");
+}
+:root{
+    --bg-color-green:#00896f;
+    --color-white:#fff;
+    --color-grey:#adadad;
+    --primary-font:'Manrope', sans-serif;
+    --color-black:#000;
+    --color-light-grey:#eee;
+    --color-dark-green:#264653;
+    --secondary-font:'Work Sans', sans-serif;
+    --color-heading:#00152b;
+    --color-para-grey:#848484;
+    --color-rgb: rgba(255,255,255,.7);
+    --color-rgb-black: rgba(0,0,0,.7);
+    --color-red:#ff5b5b;
+    --color-rgb-offer:rgba(0,20,41,0.85);
+    --box-shadow-common: 4px 8px 30px rgb(141 141 141 / 10%);
+    --color-footer:#000211;
+    --color-orange:#fd7e14;
+    --color-dark-orange:#f96822;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: var(--primary-font);
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+ul li a{
+    text-decoration: none;
+    transition: .4s ;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+ul li a:hover{
+    color: var(--bg-color-green);
+}
+a:hover{
+    text-decoration: none;
+}
+.description p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    margin: 0;
+    font-family: var(--secondary-font);
+}
+.heading h2{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-heading);
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    margin: 0;
+}
+.title p{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-heading);
+    font-family: var(--primary-font);
+    margin: 0;
+}
+.button-section .common-btn{
+    padding: 16px 40px;
+    background-color: var(--bg-color-green);
+    color: var(--color-white);
+    border-radius: 30px;
+    font-size: 16px;
+}
+.button-section .common-btn:hover{
+    color: var(--bg-color-green);
+    border: 1px solid var(--bg-color-green);
+    background-color: var(--color-white);
+    text-decoration: none;
+}
+.common-header{
+    background-color: var(--color-white);
+}
+.common-header .menu .navbar{
+    padding: 20px 50px;
+}
+
+.common-header .menu .contact-section{
+    display: flex;
+    align-items: center;
+}
+.common-header .menu .contact-section .icon-section i{
+    font-size: 30px;
+    transform: rotateZ(322deg   );
+}
+.common-header .menu .contact-section span{
+    color: var(--color-grey);
+}
+.common-header .menu .contact-section p{
+    margin: 0;
+    font-weight: 600;
+}
+
+.common-header .menu .menu-form{
+    width: 40%;
+    margin:0 auto;
+}
+.common-header .menu .header-icon{
+    margin-right: 70px;
+}
+.common-header .menu .header-icon ul li{
+    display: inline-block;
+}
+
+.common-header .menu .header-icon ul li:last-child{
+    position: relative;
+}
+.commmon-header .menu .header-icon ul li:last-child .cart-count{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: var(--color-dark-green);
+    border-radius: 50%;
+    color: var(--color-white);
+    top: -10px;
+    right: -10px;
+}
+.commmon-header .menu form{
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+   
+}
+.common-header .menu form input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-grey);
+    background: 0;
+    color: var(--color-grey);   
+}   
+.common-header .menu form input:focus{
+    outline: none;
+}
+.common-header .menu form a{
+    position: absolute;
+    right: 0;
+    padding: 8px 30px;
+    height: 100%;
+    background-color: var(--bg-color-green);
+    color: var(--color-white);
+    font-size: 18px;
+}
+.common-header .menu form a:hover{
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+}

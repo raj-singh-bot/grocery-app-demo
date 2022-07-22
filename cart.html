@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <!--header section-->
+        <header class="common-header fixed-top">
+            <div class="menu ">
+                <nav class="navbar">
+                    <div class="logo-section">
+                        <a href="index.html"><img src="images/logo-2.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="menu-form d-lg-block d-none">
+                        <form action="index.html">
+                            <input type="text" placeholder="Search Product">
+                            <a href="" class="common-btn">Search</a>
+                        </form>
+                    </div>
+                    <div class="header-icon">
+                        <ul>
+                            <li>
+                                <div class="mobile-search-icon d-lg-none d-block">
+                                    <a href="javascript:void(0)">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="my-account.html">
+                                    <i class="far fa-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="menu-bar">
+                                    <a href="javascript:void(0)">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-btn">
+                                    <a href="#">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <div class="cart-count">12</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-section">
+                        <div class="icon-section">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div class="content-section">
+                            <span>hot line number</span>
+                            <p>+880 176 1111 456</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--banner-section-->
+        <div class="banner-section">
+            <div class="content-section">
+                <div class="heading">
+                    <h2>Cart</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+       <!--cart section-->
+       <div class="cart-section">
+           <div class="container">
+               <div class="cart-details">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                              <th scope="col">delete</th>
+                              <th scope="col">image</th>
+                              <th scope="col">product name</th>
+                              <th scope="col">unite price</th>
+                              <th scope="col">Discount Price</th>
+                              <th scope="col">Quantity</th>
+                              <th scope="col">Subtotal</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <td>
+                                    <div class="icon-section">
+                                        <a href=""><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="image-section">
+                                        <img src="images/apple.png" alt="" class="img-fluid">  
+                                    </div>
+                                </td>
+                                <td>Organic Vegetable grains 100%</td>
+                                <td><del>$32.36</del></td>
+                                <td>$22.36</td>
+                                <td>
+                                    <div class="quantity">
+                                        <input type="text" name="quantity" value="1" maxlength="2" max="90" size="1" id="number">
+                                        <div class="count">
+                                            <input type="button" onclick="incrementValue()" value="+" />
+                                            <input type="button" onclick="decrementValue()" value="-" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$22.36</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="icon-section">
+                                        <a href=""><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="image-section">
+                                        <img src="images/product-sm1 (1).png" alt="" class="img-fluid">  
+                                    </div>
+                                </td>
+                                <td>Organic Vegetable grains 100%</td>
+                                <td><del>$32.36</del></td>
+                                <td>$22.36</td>
+                                <td>
+                                    <div class="quantity">
+                                        <input type="text" name="quantity" value="1" maxlength="2" max="90" size="1" id="number1">
+                                        <div class="count">
+                                            <input type="button" onclick="incrementValue()" value="+" />
+                                            <input type="button" onclick="decrementValue()" value="-" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$22.36</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="icon-section">
+                                        <a href=""><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="image-section">
+                                        <img src="images/red-beat.jpg" alt="" class="img-fluid">  
+                                    </div>
+                                </td>
+                                <td>Organic Vegetable grains 100%</td>
+                                <td><del>$32.36</del></td>
+                                <td>$22.36</td>
+                                <td>
+                                    <div class="quantity">
+                                        <input type="text" name="quantity" value="1" maxlength="2" max="90" size="1" id="number">
+                                        <div class="count">
+                                            <input type="button" onclick="incrementValue()" value="+" />
+                                            <input type="button" onclick="decrementValue()" value="-" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$22.36</td>
+                            </tr>
+                          </tbody>
+                    </table>
+                  </div>
+               </div>
+               <div class="billing-section">
+                   <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="billing-left">
+                                <div class="title">
+                                    <p>Coupon Code</p>
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="Coupon Code">
+                                    <a href="" class="common-btn">Apply Code</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="billing-right">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">Cart Totals</th>
+                                              <th scope="col"></th>
+                                              <th scope="col">$128.70</th>
+                                              
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                <th scope="col">Shipping</th>
+                                                <td>
+                                                    <ul class="shipping-detail">
+                                                        <li>Shipping Fee</li>
+                                                        <li>Total ( tax excl.)</li>
+                                                        <li>Total ( tax incl.)</li>
+                                                        <li>Taxes</li>
+                                                        <li>Shipping Enter your address to view shipping options.</li>
+                                                        <a href="">Calculate shipping</a>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Fee</li>
+                                                        <li>$15</li>
+                                                        <li>$15</li>
+                                                        <li>$15</li>
+                                                        <li>$15</li>
+                                                    </ul>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="col">Subtotal</th>
+                                                <td></td>
+                                                <td>$162.70</td>
+                                              </tr>
+                                          </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-section">
+                                    <a href="checkout.html" class="common-btn-rect">Proceed to Checkout</a>
+                                    <a href="product.html" class="shopping-btn">Continue to Shopping
+                                        <div class="icon-section">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        <!--footer -section-->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-about">
+                                <div class="title">
+                                    <p>About EG Shop</p>
+                                </div>
+                                <div class="description">
+                                    <p>EG STORE - worldwide Grocery store since 2021. We sell over 2000+ Category products on our web-site.</p>
+                                </div>
+                                <div class="footer-address">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-phone-alt"></i>
+                                            <a href="">
+                                                <span>+1234 5678 1233</span>
+                                                <span>+1234 4565 1343</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-envelope"></i>
+                                            <a href="mailto:netsolitsolution.com">
+                                                <span>info@example.com</span>
+                                                <span>support@example.com</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <a href="">
+                                                <span>3102 Bartlett Avenue Southfield, MI 48075</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer-subscribe-section">
+                                <div class="image-section">
+                                    <a href="index.html"><img src="images/footer-logo.png" alt="logo" class="img-fluid"></a>
+                                </div>
+                                <div class="description">
+                                    <p>Register Now To Get Update On Promotion And Coupons. Don’t Worry! It’s Not Spam</p>
+                                </div>
+                                <form action="index.html">
+                                    <input type="text" placeholder="Your Email">
+                                    <a href="" class="common-btn">Send</a>
+                                </form>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-links">
+                                <div class="title">
+                                    <p>Company</p>
+                                </div>
+                                <div class="links">
+                                    <ul>
+                                        <li>
+                                            <a href="privacy.html">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="returns.html">Returns</a>
+                                        </li>
+                                        <li>
+                                            <a href="t&c.html">Terms & Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Our Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Terms & Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Checkout</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Other Issues</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-section">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <div class="content-section">
+                                <div class="description">
+                                    <p>Copyright 2021 EG-Shop Grocery | Design By<a href=""> Egens Lab</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                            <div class="footer-payment">
+                                <ul>
+                                    <li>
+                                        <a href=""> 
+                                            <img src="images/paypal.svg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <img src="images/payonert.svg">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <img src="images/visa.svg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         <!--side cart section-->
+         <div class="side-cart-section">
+            <div class="close-cart-btn">
+                <a href="javascript:void(0)">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+            <div class="cart-items">
+                <ul>
+                    <li>
+                        <div class="single-cart">
+                            <div class="image-section">
+                                <img src="images/guava3.png" alt="fruit" class="img-fluid">
+                            </div>
+                            <div class="content-section">
+                                <a href="" class="title">Guava</a>
+                                <div class="rating">
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price-section">
+                                    <p><span>1x</span> $10.32</p>
+                                </div>
+                            </div>
+                            <div class="close-btn">
+                                <a href="">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-cart">
+                            <div class="image-section">
+                                <img src="images/guava3.png" alt="fruit" class="img-fluid">
+                            </div>
+                            <div class="content-section">
+                                <a href="" class="title">Guava</a>
+                                <div class="rating">
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price-section">
+                                    <p><span>1x</span> $10.32</p>
+                                </div>
+                            </div>
+                            <div class="close-btn">
+                                <a href="">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="single-cart">
+                            <div class="image-section">
+                                <img src="images/guava3.png" alt="fruit" class="img-fluid">
+                            </div>
+                            <div class="content-section">
+                                <a href="" class="title">Guava</a>
+                                <div class="rating">
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star active"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price-section">
+                                    <p><span>1x</span> $10.32</p>
+                                </div>
+                            </div>
+                            <div class="close-btn">
+                                <a href="">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-bottom">
+                <div class="cart-total">
+                    <span>Subtotal :</span>
+                    <p>$64.08</p>
+                </div>
+                <div class="button-section">
+                    <a href="">checkout</a>
+                    <a href="">view Cart</a>
+                </div>
+                <div class="description">
+                    <p><strong>SHIPPING:</strong>Continue shopping up to $64.08 and receive free shipping. stay with EG</p>
+                </div>
+
+            </div>
+        </div>
+        <!--side menu bar-->
+        <div class="side-menu-bar-common">
+            <div class="side-menu-top">
+                <div class="close-btn">
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="side-menu-bottom">
+                <div class="menu-bar-section">
+                    <div class="category-items">
+                        <button class="accordion active">Home</button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <a href="">Home 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Home 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-items">
+                        <button class="accordion active">Shop</button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <a href="product.html">Product</a>
+                                </li>
+                                <li>
+                                    <a href="product-detail.html">Product Details</a>
+                                </li>
+                                <li>
+                                    <a href="product-sidebar.html">Product Sidebar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-items">
+                        <button class="accordion active">Pages</button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">Cart</a>
+                               <li>
+                                    <a href="checkout.html">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="my-account.html">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login Register</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="error.html">Error</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-items">
+                        <button class="accordion active">Blog</button>
+                        <div class="panel">
+                            <ul>
+                                <li>
+                                    <a href="bloggrid.html">Blog Grid</a>
+                                </li>
+                                <li>
+                                    <a href="blog-standard.html">Blog Standard</a>
+                                </li>
+                                <li>
+                                    <a href="blog-detail.html">Blog Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category-items">
+                        <a href="contact.html" class="accordion active">Contact</a>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <div class="title">
+                        <p>Get in touch</p>
+                    </div>
+                    <div class="description">
+                        <p>541 Melville Ave, Palo Alto, CA 94301 connect.us@gmail.com</p>
+                    </div>
+                    <ul class="social-section">
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--mobile search button -->
+        <div class="mobile-search-btn">
+            <div class="container">
+                <div class="search-form">
+                    <label>What are you lookking for?</label>
+                    <input type="text" placeholder="Search Products, Category, Brand">
+                    <div class="close-btn">
+                        <a href="javascript:void(0)">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script>
+            $(".cart-btn a").click(function(){
+                $(".side-cart-section").addClass("show");
+            })
+            $(".close-cart-btn a").click(function(){
+                $(".side-cart-section").removeClass("show");
+            })
+        </script>
+        <script>
+            $(".menu-bar a").click(function(){
+                $(".side-menu-bar-common").addClass("show");
+            })
+            $(".close-btn a").click(function(){
+                $(".side-menu-bar-common").removeClass("show");
+            })
+        </script>
+        <script>
+            function incrementValue()
+            {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if(value<10){
+                    value++;
+                        document.getElementById('number').value = value;
+                }
+            }
+            function decrementValue()
+            {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if(value>1){
+                    value--;
+                        document.getElementById('number').value = value;
+                }
+            }
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+        <!--mobile search icon-->
+        <script>
+            $(".mobile-search-icon a").click(function(){
+                $(".mobile-search-btn").addClass("show");
+            })
+            $(".close-btn a").click(function(){
+                $(".mobile-search-btn").removeClass("show");
+            })
+        </script>
+    </body>
+</html>
